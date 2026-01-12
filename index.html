@@ -4,6 +4,7 @@
    <meta charset="UTF-8">
    <title>MrThunder's Life</title>
    <style>
+    /* 1. 网页大背景 */
     body {
         background-color: #E0E0E0;
         background-image: linear-gradient(to bottom, #E0E0E0, #FFFFFF);
@@ -11,6 +12,8 @@
         text-align: center;
         font-family: "Courier New", monospace;
     }
+    
+    /* 2. 中间那个白色的卡片盒子 */
     div {
         background-color: #FFFFFF;
         width: 60%;
@@ -19,11 +22,14 @@
         padding: 20px;
     }
 
+    /* 3. 标题样式 */
     h1 {
         color: #0000FF;
         text-decoration: underline;
         font-style: italic;
     }
+
+    /* 4. 普通链接（维基百科那个）的样式 */
     a {
         color: #ffffff;
         background-color: #0000FF;
@@ -31,33 +37,43 @@
         text-decoration: none;
         border-radius: 2px;
     }
+    
+    /* 鼠标放上去的效果 */
     a:hover {
-        background-color: #0000FF;
+        background-color: #FF00FF; /* 鼠标放上去变粉色，更有反馈感 */
         cursor: help;
     }
+
+    /* 5. 专门给博客按钮设计的样式 */
+    /* 注意：类名(.blog-link) 优先级比上面的 a 高，所以会覆盖上面的颜色 */
     .blog-link {
-        display: inline-block;
-        color: blue; 
-        background-color: white; 
+        display: inline-block; /* 修复了！这里必须是连字符 */
+        color: blue !important; /* 加个!important确保文字肯定是蓝色 */
+        background-color: white !important; /* 确保背景是白色 */
         border: 3px double black; 
         font-weight: bold;
         font-size: 20px;
         padding: 10px;
         text-decoration: none;
+        margin-top: 20px; /* 增加一点顶部间距 */
     }
    </style>
  </head>
  <body>
     
-    <h1>我是MrThunder,欢迎来到我的个人网站</h1>
-    <p style="color: #0000FF; font-weight: bold; font-size: 18px;">我出生于2006年,一个有趣的年份</p>
-    
-    <a href="https://en.wikipedia.org/wiki/2006">了解更多关于2006年的信息</a>
-    
-    <br><br>
-    <a href="/blog/" class="blog-link">
-        >>> 进入我的博客 <<<
-    </a>
+    <div>
+        
+        <h1>我是MrThunder,欢迎来到我的个人网站</h1>
+        <p style="color: #0000FF; font-weight: bold; font-size: 18px;">我出生于2006年,一个有趣的年份</p>
+        
+        <a href="https://en.wikipedia.org/wiki/2006">了解更多关于2006年的信息</a>
+        
+        <br><br>
+        
+        <a href="/blog/" class="blog-link">
+            >>> 进入我的博客 <<<
+        </a>
 
- </body>
+    </div>
+    </body>
 </html>
