@@ -22,7 +22,7 @@
     h1 {
         color: #0000FF;
         text-decoration: underline;
-        font-size: italic;
+        font-style: italic;
     }
     a {
         color: #ffffff;
@@ -35,22 +35,16 @@
         background-color: #0000FF;
         cursor: help;
     }
-    <br><br> <a href="/blog/" style="
-    display: inline-block;
-    color: blue; 
-    background-color: white; 
-    border: 3px double black; 
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-">
-    >>> 进入我的博客 <<<
-</a>
-
-
-
-
+    .blog-link {
+        display: inline-block;
+        color: blue; 
+        background-color: white; 
+        border: 3px double black; 
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
    </style>
  </head>
  <body>
@@ -59,6 +53,11 @@
     <p style="color: #0000FF; font-weight: bold; font-size: 18px;">我出生于2006年,一个有趣的年份</p>
     
     <a href="https://en.wikipedia.org/wiki/2006">了解更多关于2006年的信息</a>
+    
+    <br><br>
+    <a href="/blog/" class="blog-link">
+        >>> 进入我的博客 <<<
+    </a>
 
  </body>
 </html>
